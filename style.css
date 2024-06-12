@@ -1,0 +1,161 @@
+@import url("styles/reset.css");
+@import url("styles/menu.css");
+@import url("styles/otros.css");
+@import url("styles/about.css");
+@import url("styles/skills.css");
+@import url("styles/hobbies.css");
+@import url("styles/academic.css");
+@import url("styles/experiencia.css");
+@import url("styles/contacto.css");
+@import url("styles/footer.css");
+
+body {
+    box-sizing: border-box;
+    background-color: #f6eaf9;
+    font-family: 'Raleway';
+    color: #464646;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol, ul,li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: #464646;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+/*Sección hero*/
+
+section.otros{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+
+    .title__network{
+       display: flex;
+       justify-content:space-between; 
+       align-items: center;
+    }
+
+    
+}
+.title__profile{
+    width: 368px;
+    height: 368px;
+    border-radius: 200px; 
+}
+
+/*Sección About*/
+
+section.about{
+    display: flex;
+}
+
+/* experiencia*/
+
+section.experience{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Sección About*/
+
+section.about{
+
+}
+
+/*Sección Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiencia Académica*/
+
+section.academic{
+
+}
+
+/* experiencia*/
+
+section.experience{
+
+}
+
+/*Contacto*/
+
+section.formcontacto{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}

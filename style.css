@@ -36,6 +36,8 @@ a{
     text-decoration: none;
 }
 
+/*Seccion Menu*/
+
 .header{
     display: flex;
     align-items: center;
@@ -43,28 +45,27 @@ a{
     padding: 16px;
 }
 
-
-/*Sección hero*/
-
-section.otros{
+/*Sección Otros*/
+section.otros {
     display: flex;
     flex-direction: column;
     padding: 16px;
-    gap: 16px;
-
-    .title__network{
-       display: flex;
-       justify-content:space-between; 
-       align-items: center;
-    }
-
-    
+    gap: 16px; 
 }
+
+.title__network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
 .title__profile{
     width: 368px;
     height: 368px;
     border-radius: 200px; 
 }
+
 
 /*Sección About*/
 

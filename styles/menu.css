@@ -1,10 +1,31 @@
-.menu__logo{
+.menu__header{
     display: flex;
     align-items: center;
     gap: 8px;
-    width: 134px;
+    width: 55%;
     height: 24px;
     font-weight: 700;
+    justify-content: space-between;
 }
+
+.menu__title{
+    display: flex;
+    
+}
+
+.menu__list{
+    display: flex;
+    padding: 10%;
+    margin-left: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list__item{
+    display: flex;
+    text-align: center;
+    margin: 10%; 
+}
+
 
 

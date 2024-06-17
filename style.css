@@ -37,12 +37,8 @@ a{
 }
 
 /*Seccion Menu*/
-
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
+section.menu{
+    background-color: aqua;
 }
 
 /*Sección Otros*/
@@ -52,20 +48,6 @@ section.otros {
     padding: 16px;
     gap: 16px; 
 }
-
-.title__network {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
-}
-
-.title__profile{
-    width: 368px;
-    height: 368px;
-    border-radius: 200px; 
-}
-
 
 /*Sección About*/
 
@@ -79,7 +61,6 @@ section.experience{
     display: flex;
     flex-direction: column;
 }
-
 
 /*Sección About*/
 

@@ -1,12 +1,75 @@
-.title__network {
+/* Styles for the Others section */
+section.otros {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.title__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title__profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.title__profile{
-    width: 368px;
-    height: 368px;
-    border-radius: 200px; 
-    margin: 5% 5% 5% 5%;
+.title__bio, .title__subsection {
+    margin-bottom: 8px;
+}
+
+.title__network {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.title__network__item {
+    display: flex;
+    align-items: center;
+}
+
+.title__network__item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #464646;
+    text-decoration: none;
+}
+
+.title__network__item a:hover {
+    background-color: #90d5de;
+}
+
+/* Styles for small devices (mobile) */
+@media (max-width: 700px) {
+    .title__div {
+        align-items: center;
+    }
+
+    .title__profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title__bio, .title__subsection {
+        text-align: center;
+    }
+
+    .title__network {
+        flex-direction: column;
+        align-items: center;
+    }
 }

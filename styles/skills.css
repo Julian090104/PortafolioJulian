@@ -1,0 +1,43 @@
+/* Styles for the Skills section */
+section.skills {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.skills__img {
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    text-align: center;
+}
+
+.skills__name {
+    text-align: center;
+}
+
+/* Styles for small devices (mobile) */
+@media (max-width: 700px) {
+    .skills__line {
+        justify-content: center;
+    }
+}

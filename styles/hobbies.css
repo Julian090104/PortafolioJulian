@@ -1,0 +1,43 @@
+/* Styles for the Hobbies section */
+section.hobbies {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbies__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.hobbies__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.hobbies__img {
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    text-align: center;
+}
+
+.hobbies__name {
+    text-align: center;
+}
+
+/* Styles for small devices (mobile) */
+@media (max-width: 700px) {
+    .hobbies__line {
+        justify-content: center;
+    }
+}

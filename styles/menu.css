@@ -1,15 +1,11 @@
-/* Estilos generales para el menú */
-
+/* General styles for the menu */
 .menu__header {
     display: flex;
     align-items: center;
-    gap: 8px;
-    width: 100%;
-    height: 60px;
-    font-weight: 1200;
-    justify-content: space-between; /* Ajuste para espacio entre título y menú */
+    justify-content: space-between;
     padding: 0 20px;
     background-color: #f8f8f8;
+    height: 60px;
 }
 
 .menu__title {
@@ -21,10 +17,10 @@
 .menu__list {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-    gap: 1%; /* Ajuste de espacio entre los elementos */
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
+    gap: 1%;
 }
 
 .menu__list__item {
@@ -45,26 +41,22 @@
     background-color: #ddd;
 }
 
-/* Estilos para dispositivos pequeños (móviles) */
+/* Styles for small devices (mobile) */
 @media (max-width: 700px) {
     .menu__header {
         flex-direction: column;
         height: auto;
         padding: 10%;
-        padding-left: 30%;
-        padding-right: 30%;
     }
 
     .menu__title {
-        margin-left: 0;
-        margin-right: 0;
         justify-content: center;
         width: 100%;
+        margin-left: 0;
     }
 
     .menu__list {
         flex-direction: column;
-        gap: 10px;
         width: 100%;
         justify-content: center;
     }

@@ -1,237 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Julian Tabaco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Referencia de la hoja de estilo de Css -->
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="assets/img/logo-portafolio-julian.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuente del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">>
+
+    <title>Julian T. Portafolio</title>
+
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/menu.css">
+    <link rel="stylesheet" href="assets/styles/hero.css">
+    <link rel="stylesheet" href="assets/styles/about.css">
+    <link rel="stylesheet" href="assets/styles/skills.css">
+    <link rel="stylesheet" href="assets/styles/academic.css">
+    <link rel="stylesheet" href="assets/styles/experience.css">
+    <link rel="stylesheet" href="assets/styles/contact.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+
+    <!-- Uso de emailjs para contactarme -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('IlK98jQ2eFKY1Ncg3')
+    </script>
+
 </head>
 
 <body>
-    <!-- Sección del Menú  -->
-    <section class="menu">
-        <header class="menu__header">
-            <img src="assets/vector.png" alt="Logo">
-            <h3 class="menu__title">Julian Tabaco</h3>
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+    <!-- Menú  -->
+    <header class="menu container">
+        <h2 class="menu__logo">Julian T.</h2>
+        <input type="checkbox" id="menu__bar">
+        <label for="menu__bar">&#9776;</label>
+        <nav>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#about">Sobre mí</a></li>
+                <li class="menu__item"><a class="menu__link" href="#skills">Skills y Hobbies</a></li>
+                <li class="menu__item"><a class="menu__link" href="#education">Formación</a></li>
+                <li class="menu__item"><a class="menu__link" href="#projects">Proyectos</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Sección del Header/Title/Hero -->
-    <section class="otros">
-        <div class="title__div">
-            <img class="title__profile" src="assets/profileJulian.png" alt="Profile">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Fulana de Tal y soy desarrolladora web.</h2>
-                <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/Julian090104">Github <img src="assets/arrow.png" alt="Arrow"></a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/didier-julian-tabaco-duran-619069312/">Linkedin <img src="assets/arrow.png" alt="Arrow"></a></li>
-                    <li class="title__network__item"><a href="">Currículo <img src="assets/arrow.png" alt="Arrow"></a></li>
-                </ul>
-            </div>
+    <section class="hero container">
+        <div class="hero__container">
+            <h1 class="hero__title">Hola, soy Julian Tabaco.</h1>
+            <p class="hero__description">
+                "Actualmente, me dedico principalmente al desarrollo Front-End, donde me apasiona crear experiencias
+                únicas, centradas por completo en mejorar la interacción del usuario."
+            </p>
+            <ul class="hero__social">
+                <li class="hero__item"><a href=" " target="_blank" class="hero__link hero__link--cv">Curriculum <i
+                            class="uil uil-external-link-alt"></i></a></li>
+                <li class="hero__item"><a href="https://www.linkedin.com/in/didier-julian-tabaco-duran-619069312/"
+                        target="_blank" class="hero__link hero__link--linkedin">LinkedIn <i
+                            class="uil uil-linkedin"></i></a></li>
+                <li class="hero__item"><a href="https://github.com/Julian090104" target="_blank"
+                        class="hero__link hero__link--github">Github <i class="uil uil-github"></i></a></li>
+            </ul>
         </div>
+        <img src="assets/img/Personal/profile-portafolio-julian.png" alt="Foto de perfil" class="hero__profile"
+            fetchpriority="high">
     </section>
-    
+
+    <img src="assets/img/img-back.svg" alt="Wave divisor" class="wave">
+
     <!-- Sección sobre mi -->
-    <section class="about" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets/signature.png" alt="Firma">
-        </div>
-    </section>
-
-    <!-- Sección de Skills -->
-    <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
-        <div class="skills__line">
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/htlm.png" alt="HTML 5"></li>
-                    <li class="skills__name">HTML 5</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/js_icon.png" alt="JavaScript"></li>
-                    <li class="skills__name">JavaScript</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/php_icon.png" alt="PHP"></li>
-                    <li class="skills__name">PHP</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/nodejs_icon.png" alt="Node JS"></li>
-                    <li class="skills__name">Node JS</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/react_icon.png" alt="React"></li>
-                    <li class="skills__name">React</li>
-                </ul>
-            </div>
-
-            <div class="skills__box">
-                <ul>
-                    <li class="skills__img"><img src="assets/css_icon.png" alt="CSS"></li>
-                    <li class="skills__name">CSS</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Hobbies -->
-    <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
-        <div class="hobbies__line">
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/skate_icon.png" alt="Patinaje"></li>
-                    <li class="hobbies__name">Patinaje</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/guitar_icon.png" alt="Tocar bajo"></li>
-                    <li class="hobbies__name">Tocar bajo</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/headphones_icon.png" alt="Oir música"></li>
-                    <li class="hobbies__name">Oir música</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/tv_icon.png" alt="Ver series"></li>
-                    <li class="hobbies__name">Ver series</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/forkspoon_icon.png" alt="Cocinar"></li>
-                    <li class="hobbies__name">Cocinar</li>
-                </ul>
-            </div>
-
-            <div class="hobbies__box">
-                <ul>
-                    <li class="hobbies__img"><img src="assets/camera_icon.png" alt="Tomar fotos"></li>
-                    <li class="hobbies__name">Tomar fotos</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Formación académica -->
-    <section class="academic" id="formacion">
-        <h2 class="academic__title">Formación académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__box__list">
-                    <li class="academic__courses__box__list__date">2019 - Actualidad</li>
-                    <li class="academic__courses__box__list__name">Ciencia de la Computación</li>
-                    <li class="academic__courses__box__list__place">Universidad Nacional Autónoma de México (UNAM)</li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__box__list">
-                    <li class="academic__courses__box__list__date">2020 - 2021</li>
-                    <li class="academic__courses__box__list__name">Desarrollo Web Full Stack</li>
-                    <li class="academic__courses__box__list__place">Platzi</li>
-                </ul>
-            </div>
-
-            <div class="academic__courses__box">
-                <ul class="academic__courses__box__list">
-                    <li class="academic__courses__box__list__date">2021</li>
-                    <li class="academic__courses__box__list__name">Introducción a la Ciencia de Datos</li>
-                    <li class="academic__courses__box__list__place">Coursera</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Proyectos -->
-    <section class="experience" id="xp">
-        <h3 class="experience__title">Proyectos</h3>
-        <div class="experience__cards">
-            <div class="experience__cards__item">
-                <div class="experience__cards__item__content">
-                    <img src="assets/phone_icon.png" alt="Proyecto">
-                    <h4 class="experience__cards__item__content__title">Proyecto 1</h4>
-                    <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <main>
+        <section class="about container" id="about">
+            <div class="about__container">
+                <div class="about__text">
+                    <h3 class="about__title">Sobre mí</h3>
+                    <p class="about__description">
+                        Soy programador originario de Nunchía, Casanare, actualmente estudiando Ingeniería en Sistemas
+                        en la Universidad de Pamplona, Colombia. A lo largo de mi trayectoria, he participado en
+                        diversos proyectos que abarcan el desarrollo de páginas web y aplicaciones de escritorio. Me
+                        especializo tanto en el desarrollo frontend como en el backend, incluyendo la gestión de bases
+                        de datos.
+                        <br><br>
+                        Me encuentro haciendo especialización en Frontend con Alura Latam
+                    </p>
+                </div>
+                <div class="about__img">
+                    <figure>
+                        <img src="assets/img/about/developer-1.png" alt="Imagen de tipo ilustrativa"
+                            class="about__img--optional" loading="lazy">
+                    </figure>
                 </div>
             </div>
-            
-            <div class="experience__cards__item">
-                <div class="experience__cards__item__content">
-                    <img src="assets/phone_icon.png" alt="Proyecto">
-                    <h4 class="experience__cards__item__content__title">Proyecto 2</h4>
-                    <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <!-- Sección de Skills -->
+        <section class="skills container" id="skills">
+            <div class="skills__tech">
+                <h3 class="skills__title">Skills</h3>
+                <div class="skills__container">
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/html5.svg" alt="Logo de HTML5">
+                        <span class="skills__text">HTML5</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/css3.svg" alt="Logo de CSS3">
+                        <span class="skills__text">CSS3</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/javascript.svg" alt="Logo de Javascript">
+                        <span class="skills__text">Javascript</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/java.svg" alt="Logo de java">
+                        <span class="skills__text">Java</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/eclipse.svg" alt="Logo de Eclipse">
+                        <span class="skills__text">Eclipse</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/VScode.svg" alt="Logo de visual studio code">
+                        <span class="skills__text">VScode</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/VScommunity.svg"
+                            alt="Logo de visual studio code">
+                        <span class="skills__text">VScommunity</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/git.svg" alt="Logo de Git">
+                        <span class="skills__text">Git</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/python.svg" alt="Logo de python">
+                        <span class="skills__text">Python</span>
+                    </div>
+                    <div class="skills__box">
+                        <img class="skills__img" src="assets/img/Skills/jupyter.svg" alt="Logo de Jupyter">
+                        <span class="skills__text">Jupyther</span>
+                    </div>
                 </div>
             </div>
-            
-            <div class="experience__cards__item">
-                <div class="experience__cards__item__content">
-                    <img src="assets/phone_icon.png" alt="Proyecto">
-                    <h4 class="experience__cards__item__content__title">Proyecto 3</h4>
-                    <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <!-- Sección de Skills__Hobbies -->
+            <div class="skills__hobbies">
+                <h3 class="skills__title">Hobbies</h3>
+                <div class="skills__container skills__container--hobbies">
+                    <div class="skills__box--hobbies">
+                        <span class="skills__text">Jugar videojuegos</span>
+                        <img class="skills__img--hobbies" src="assets/img/Hobbies/videogame.svg"
+                            alt="Icon de control para videojuego">
+                    </div>
+                    <div class="skills__box--hobbies">
+                        <span class="skills__text">Ver videos</span>
+                        <img class="skills__img--hobbies" src="assets/img/Hobbies/youtube.svg" alt="Icon de Youtube">
+                    </div>
+                    <div class="skills__box--hobbies">
+                        <span class="skills__text">Aprender</span>
+                        <img class="skills__img--hobbies" src="assets/img/Hobbies/aprender.svg" alt="Icon de cerebro">
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Sección de Formación académica -->
+        <section class="academic" id="formacion">
+            <h2 class="academic__title">Formación académica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__box__list">
+                        <li class="academic__courses__box__list__date">2019 - Actualidad</li>
+                        <li class="academic__courses__box__list__name">Ciencia de la Computación</li>
+                        <li class="academic__courses__box__list__place">Universidad Nacional Autónoma de México (UNAM)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__box__list">
+                        <li class="academic__courses__box__list__date">2020 - 2021</li>
+                        <li class="academic__courses__box__list__name">Desarrollo Web Full Stack</li>
+                        <li class="academic__courses__box__list__place">Platzi</li>
+                    </ul>
+                </div>
+
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__box__list">
+                        <li class="academic__courses__box__list__date">2021</li>
+                        <li class="academic__courses__box__list__name">Introducción a la Ciencia de Datos</li>
+                        <li class="academic__courses__box__list__place">Coursera</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Proyectos -->
+        <section class="experience" id="xp">
+            <h3 class="experience__title">Proyectos</h3>
+            <div class="experience__cards">
+                <div class="experience__cards__item">
+                    <div class="experience__cards__item__content">
+                        <img src="assets/phone_icon.png" alt="Proyecto">
+                        <h4 class="experience__cards__item__content__title">Proyecto 1</h4>
+                        <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="experience__cards__item">
+                    <div class="experience__cards__item__content">
+                        <img src="assets/phone_icon.png" alt="Proyecto">
+                        <h4 class="experience__cards__item__content__title">Proyecto 2</h4>
+                        <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="experience__cards__item">
+                    <div class="experience__cards__item__content">
+                        <img src="assets/phone_icon.png" alt="Proyecto">
+                        <h4 class="experience__cards__item__content__title">Proyecto 3</h4>
+                        <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section class="contact" id="contacto">
+            <h3 class="contact__title">Contacto</h3>
+            <form id="form" class="contact__form">
+                <div class="field">
+                    <label for="nombre" class="contact__form__label">nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                </div>
+                <div class="field">
+                    <label for="mensaje" class="contact__form__label">mensaje</label>
+                    <input type="text" name="mensaje" id="mensaje">
+                </div>
+                <div class="field">
+                    <label for="email" class="contact__form__label">email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <input type="submit" id="button" value="Enviar" class="contact__form__button">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p class="footer__copy">&copy; Desarrollado por Julian Tabaco 2024</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/didier-julian-tabaco-duran-619069312/" target="_blank"><i
+                    class="uil uil-linkedin"></i></a>
+            <a href="https://github.com/Julian090104" target="_blank"><i class="uil uil-github"></i></a>
+            <a href="mailto:djulian_090104@gmail.com"><i class="uil uil-envelope"></i></a>
         </div>
-    </section>
+    </footer>
 
-    <!-- Sección de contacto -->
-    <section class="contact" id="contacto">
-        <h3 class="contact__title">Contacto</h3>
-        <form action="#" method="POST" class="contact__form">
-            <label for="nombre" class="contact__form__label">Nombre</label>
-            <input type="text" id="nombre" name="nombre" class="contact__form__input" required>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
 
-            <label for="email" class="contact__form__label">Correo Electrónico</label>
-            <input type="email" id="email" name="email" class="contact__form__input" required>
-
-            <label for="mensaje" class="contact__form__label">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" class="contact__form__textarea" required></textarea>
-
-            <button type="submit" class="contact__form__button">Enviar</button>
-        </form>
-    </section>
-    <script src="validacion.js"></script>
+        ScrollReveal().reveal('.hero__profile', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.hero__title, .hero__sub, .hero__description', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal('.hero__social li', { delay: 100, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.about__text', { delay: 100, origin: 'left' });
+        ScrollReveal().reveal('.about__img', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.skills__tech', { delay: 100, origin: 'bottom' });
+        ScrollReveal().reveal('.skills__hobbies', { delay: 50, origin: 'bottom' });
+        ScrollReveal().reveal('details', { delay: 50, origin: 'bottom' });
+        ScrollReveal().reveal('.projects__img', { delay: 200, origin: 'left' });
+    </script>
 </body>
+
 </html>

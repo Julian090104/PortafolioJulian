@@ -1,0 +1,37 @@
+:root {
+    --background-blanco: #F5F5F5;
+    --color-primario: #0099ff;
+    --color-azul-claro: #33adff;
+    --color-azul-oscuro: #0066cc;
+    --color-azul-grisaceo: #99ccff;
+    --color-cenizo56: #565656;
+    --color-cenizo46: #464646;
+    --color-verde: #3dd782;
+
+    --poppins: 'Poppins', sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--poppins);
+    background: var(--color-primario);
+}
+
+.container {
+    padding: 0 9.5rem;
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        padding: 0 5.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 0 1.8rem;
+    }
+}

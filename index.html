@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">>
 
     <title>Julian T. Portafolio</title>
 
@@ -23,16 +22,17 @@
     <link rel="stylesheet" href="assets/styles/hero.css">
     <link rel="stylesheet" href="assets/styles/about.css">
     <link rel="stylesheet" href="assets/styles/skills.css">
-    <link rel="stylesheet" href="assets/styles/academic.css">
-    <link rel="stylesheet" href="assets/styles/experience.css">
+    <link rel="stylesheet" href="assets/styles/education.css">
+    <link rel="stylesheet" href="assets/styles/projects.css">
     <link rel="stylesheet" href="assets/styles/contact.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
 
-    <!-- Uso de emailjs para contactarme -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        emailjs.init('IlK98jQ2eFKY1Ncg3')
-    </script>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 
@@ -75,8 +75,6 @@
             fetchpriority="high">
     </section>
 
-    <img src="assets/img/img-back.svg" alt="Wave divisor" class="wave">
-
     <!-- Sección sobre mi -->
     <main>
         <section class="about container" id="about">
@@ -84,10 +82,12 @@
                 <div class="about__text">
                     <h3 class="about__title">Sobre mí</h3>
                     <p class="about__description">
-                        Soy programador originario de Nunchía, Casanare, actualmente estudiando Ingeniería en Sistemas
+                        Soy programador originario de Nunchía, Casanare, actualmente estudiando Ingeniería en
+                        Sistemas
                         en la Universidad de Pamplona, Colombia. A lo largo de mi trayectoria, he participado en
                         diversos proyectos que abarcan el desarrollo de páginas web y aplicaciones de escritorio. Me
-                        especializo tanto en el desarrollo frontend como en el backend, incluyendo la gestión de bases
+                        especializo tanto en el desarrollo frontend como en el backend, incluyendo la gestión de
+                        bases
                         de datos.
                         <br><br>
                         Me encuentro haciendo especialización en Frontend con Alura Latam
@@ -101,6 +101,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Sección de Skills -->
         <section class="skills container" id="skills">
@@ -173,89 +174,168 @@
         </section>
 
         <!-- Sección de Formación académica -->
-        <section class="academic" id="formacion">
-            <h2 class="academic__title">Formación académica</h2>
-            <div class="academic__courses">
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__box__list">
-                        <li class="academic__courses__box__list__date">2019 - Actualidad</li>
-                        <li class="academic__courses__box__list__name">Ciencia de la Computación</li>
-                        <li class="academic__courses__box__list__place">Universidad Nacional Autónoma de México (UNAM)
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__box__list">
-                        <li class="academic__courses__box__list__date">2020 - 2021</li>
-                        <li class="academic__courses__box__list__name">Desarrollo Web Full Stack</li>
-                        <li class="academic__courses__box__list__place">Platzi</li>
-                    </ul>
-                </div>
-
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__box__list">
-                        <li class="academic__courses__box__list__date">2021</li>
-                        <li class="academic__courses__box__list__name">Introducción a la Ciencia de Datos</li>
-                        <li class="academic__courses__box__list__place">Coursera</li>
-                    </ul>
-                </div>
+        <section class="education container" id="education">
+            <h3 class="education__title">Educación</h3>
+            <div class="education__container">
+                <details>
+                    <summary>
+                        <span class="summary-title">Especialización FrontEnd <br><br> 2024 - Presente</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        Programa Oracle Next Education con Alura Latam
+                    </div>
+                    <div class="summary-chevron-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-up">
+                            <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Google Ciberseguridad & IA <br><br> 2024 - Presente</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        Google-Coursera
+                    </div>
+                    <div class="summary-chevron-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-up">
+                            <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                </details>
+                <details>
+                    <summary>
+                        <span class="summary-title">Ingenieria en Sistemas <br><br> 2021 - Presente</span>
+                        <div class="summary-chevron-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </summary>
+                    <div class="summary-content">
+                        Universidad de Pamplona, Colombia
+                    </div>
+                    <div class="summary-chevron-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-up">
+                            <polyline points="18 15 12 9 6 15"></polyline>
+                        </svg>
+                </details>
             </div>
         </section>
 
         <!-- Sección de Proyectos -->
-        <section class="experience" id="xp">
-            <h3 class="experience__title">Proyectos</h3>
-            <div class="experience__cards">
-                <div class="experience__cards__item">
-                    <div class="experience__cards__item__content">
-                        <img src="assets/phone_icon.png" alt="Proyecto">
-                        <h4 class="experience__cards__item__content__title">Proyecto 1</h4>
-                        <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.</p>
+        <section class="projects container" id="projects">
+            <h3 class="projects__title">Proyectos</h3>
+            <div class="projects__container">
+                <div class="projects__card">
+                    <img src="assets/img/Proyects/encriptador-web.png" alt="Proyecto Encriptador" class="projects__img"
+                        loading="lazy">
+                    <div class="projects__content">
+                        <div class="projects__content--skills">
+                            <img src="assets/img/Skills/html5.svg" alt="Icon de HTML">
+                            <img src="assets/img/Skills/css3.svg" alt="Icon de CSS">
+                            <img src="assets/img/Skills/javascript.svg" alt="Icon de Javascript">
+                        </div>
+                        <h3 class="projects__content--title">Encriptador de texto</h3>
+                        <p class="projects__content--description">Proyecto hecho con HTML5, CSS3 y Javascript. Encripta
+                            cualquier texto reemplazando las vocales por alguna palabra corta. No se permite ingresar
+                            mayúsculas, acentos o cualquier caracter especial. También es posible desencriptar textos
+                            que ya han sido encriptados.
+                            Fue el primer challenge del programa Oracle Next Education con Alura Latam.</p>
+                        <div class="projects__content--buttons">
+                            <a class="projects__link projects__link--repo"
+                                href="https://github.com/Julian090104/encriptador-web" target="_blank">Repositorio
+                                <i class="uil uil-github"></i></a>
+                            <a class="projects__link projects__link--demo"
+                                href="https://julian090104.github.io/encriptador-web/" target="_blank">Ver demo <i
+                                    class="uil uil-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="experience__cards__item">
-                    <div class="experience__cards__item__content">
-                        <img src="assets/phone_icon.png" alt="Proyecto">
-                        <h4 class="experience__cards__item__content__title">Proyecto 2</h4>
-                        <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.</p>
-                    </div>
-                </div>
-
-                <div class="experience__cards__item">
-                    <div class="experience__cards__item__content">
-                        <img src="assets/phone_icon.png" alt="Proyecto">
-                        <h4 class="experience__cards__item__content__title">Proyecto 3</h4>
-                        <p class="experience__cards__item__content__description">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.</p>
+                <div class="projects__card">
+                    <img src="assets/img/Proyects/barberia-web.png" alt="Proyecto Encriptador" class="projects__img"
+                        loading="lazy">
+                    <div class="projects__content">
+                        <div class="projects__content--skills">
+                            <img src="assets/img/Skills/html5.svg" alt="Icon de HTML">
+                            <img src="assets/img/Skills/css3.svg" alt="Icon de CSS">
+                        </div>
+                        <h3 class="projects__content--title">Web Barberia</h3>
+                        <p class="projects__content--description">
+                            Proyecto hecho con HTML5, CSS3 y JavaScript. Consiste en una página web básica para una
+                            barbería que incluye una navegación con secciones de Home, Productos y Contacto. El proyecto
+                            aborda conceptos de estructura de documentos con HTML, estilos y diseño responsive con CSS.
+                            Fue un proyecto hecho durante el programa Oracle Next Education con Alura Latam.
+                        </p>
+                        <div class="projects__content--buttons">
+                            <a class="projects__link projects__link--repo"
+                                href="https://github.com/Julian090104/barberia-alura" target="_blank">Repositorio
+                                <i class="uil uil-github"></i></a>
+                            <a class="projects__link projects__link--demo"
+                                href="https://julian090104.github.io/barberia-alura/" target="_blank">Ver demo <i
+                                    class="uil uil-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Sección de contacto -->
-        <section class="contact" id="contacto">
-            <h3 class="contact__title">Contacto</h3>
-            <form id="form" class="contact__form">
-                <div class="field">
-                    <label for="nombre" class="contact__form__label">nombre</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div class="field">
-                    <label for="mensaje" class="contact__form__label">mensaje</label>
-                    <input type="text" name="mensaje" id="mensaje">
-                </div>
-                <div class="field">
-                    <label for="email" class="contact__form__label">email</label>
-                    <input type="text" name="email" id="email">
-                </div>
-
-                <input type="submit" id="button" value="Enviar" class="contact__form__button">
-            </form>
+        <section class="contact container" id="contact">
+            <div class="contact__container">
+                <h3 class="contact__title">¿Tienes una idea? Contáctame</h3>
+                <form id="form">
+                    <div class="field">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="nombre" required placeholder="Tu nombre">
+                        <div class="contact__error contact__error--nombre"></div>
+                        <div id="nombre-counter"></div>
+                    </div>
+                    <div class="field">
+                        <label for="Asunto">Asunto</label>
+                        <input type="text" name="Asunto" id="asunto" required placeholder="Asunto del correo">
+                        <div class="contact__error contact__error--asunto"></div>
+                        <div id="asunto-counter"></div>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="email@dominio.com">
+                        <div class="contact__error contact__error--email"></div>
+                    </div>
+                    <div class="field">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea name="Mensaje" id="mensaje" required placeholder="Escribe tu mensaje"></textarea>
+                        <div class="contact__error contact__error--mensaje"></div>
+                        <div id="mensaje-counter"></div>
+                    </div>
+                    <input type="submit" id="button" value="Send Email">
+                </form>
+            </div>
+            <figure class="contact__img">
+                <img src="assets/img/about/developer-3.png" alt="Imagen tipo 3D ilustrativa" loading="lazy">
+            </figure>
         </section>
+
     </main>
 
     <footer class="footer container">
@@ -268,7 +348,13 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <!-- Uso de emailjs para contactarme -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('IlK98jQ2eFKY1Ncg3')
+    </script>
+    <script src="assets/js/validacion.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         ScrollReveal({

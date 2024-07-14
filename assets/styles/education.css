@@ -1,0 +1,93 @@
+.education {
+    padding-top: 4rem;
+    /* Aumenta el padding superior */
+    padding-bottom: 4rem;
+    /* Aumenta el padding inferior */
+    scroll-margin-top: 5em;
+}
+
+.education__title {
+    color: var(--color-cenizo-46);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.education__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.education__container :hover {
+    color: var(--color-cenizo-56);
+}
+
+details {
+    font-size: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    background: var(--color-azul-medio-claro);
+    border-radius: 8px;
+    position: relative;
+    max-width: 80rem;
+}
+
+.summary-title {
+    user-select: none;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.summary-content {
+    border-top: 1px solid #bbb8e7;
+    cursor: default;
+    padding: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+}
+
+.summary-logo {
+    width: 70%;
+}
+
+summary {
+    list-style: none;
+    padding: 2em;
+}
+
+.summary-chevron-up svg {
+    opacity: 0.5;
+}
+
+.summary-chevron-up,
+.summary-chevron-down {
+    pointer-events: none;
+    position: absolute;
+    top: 0.75em;
+    right: 1em;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    details {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .summary-title {
+        display: flex;
+        max-width: 300px;
+    }
+
+    details {
+        font-size: 1.2rem;
+    }
+}

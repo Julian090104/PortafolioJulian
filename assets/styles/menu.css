@@ -11,20 +11,21 @@
     height: 1em;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: var(--background-blanco);
     transition: ease 1s;
+    background: var(--color-segundario-azul-medio-3);
 }
 
 .menu.sticky {
     height: 1em;
-    background: var(--background-blanco);
+    background: var(--color-segundario-azul-claro-1);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .menu__logo {
-    color: var(--color-primario);
+    color: var(--color-oscuro-1);
     font-size: 1.5rem;
     font-weight: 700;
+    padding: 2%;
 }
 
 #menu__bar {
@@ -35,7 +36,7 @@
     font-size: 40px;
     cursor: pointer;
     display: none;
-    color: var(--color-cenizo56);
+    color: var(--color-oscuro-1);
 }
 
 .menu__list {
@@ -46,15 +47,17 @@
 }
 
 .menu__link {
-    color: var(--color-cenizo56);
+    color: var(--color-cenizo-46);
     text-decoration: none;
+    font-weight: bold;
 }
+
 
 .menu__link:after {
     content: "";
     display: block;
     margin-left: 0;
-    background-color: var(--color-azul-oscuro);
+    background-color: var(--color-primario-verde-oscuro-5);
     height: 3px;
     width: 0;
     transition: 0.3s;
@@ -87,12 +90,13 @@
         top: 80px;
         bottom: 100%;
         width: auto;
-        height: auto;
+        height:auto;
+        max-height: 300px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1.4em;
-        background-color: var(--background-blanco);
+        background-color: var(--color-segundario-azul-medio-3);
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         overflow: hidden;
         transition: all .5s ease-in-out;
@@ -100,7 +104,7 @@
 
     .menu__link {
         font-size: 1.1rem;
-        color: var(--color-cenizo56);
+        color: var(--color-cenizo-4646);
     }
 
     .menu label {

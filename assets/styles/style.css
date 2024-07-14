@@ -1,12 +1,32 @@
 :root {
-    --background-blanco: #F5F5F5;
-    --color-primario: #0099ff;
-    --color-azul-claro: #33adff;
-    --color-azul-oscuro: #0066cc;
-    --color-azul-grisaceo: #99ccff;
-    --color-cenizo56: #565656;
-    --color-cenizo46: #464646;
-    --color-verde: #3dd782;
+    --background-blanco: #ffffff;
+    --color-primario-verde-oscuro-5: #008646;
+    --color-primario-verde-medio-4: #00B35D;
+    --color-primario-verde-medio-3: #26BD74;
+    --color-primario-verde-medio-2: #46CB8B;
+    --color-primario-verde-claro-1: #71DCA9;
+    --color-segundario-azul-oscuro-5: #02667D;
+    --color-segundario-azul-medio-4: #0288A7;
+    --color-segundario-azul-medio-3: #06AAD1;
+    --color-segundario-azul-medio-2: #2DB5D5;
+    --color-segundario-azul-claro-1: #56C2DB;
+    --color-segundario-limon-oscuro-5: #31A500;
+    --color-segundario-limon-medio-4: #42DC00;
+    --color-segundario-limon-medio-3: #62E02D;
+    --color-segundario-limon-medio-2: #7DE750;
+    --color-segundario-limon-claro-1: #9EEF7B;
+    --color-verde:#62E02D;
+    --color-verde-claro:#63e02d5d;
+    --color-azul: #040404 ;
+    --color-azul-claro: #2de0dd;
+    --color-azul-medio: #1bc6ec;
+    --color-azul-medio-claro: #1bc6ec4d;
+    --color-azul-oscuro: #006aff ;
+    --color-cenizo-36: #3E2423;
+    --color-cenizo-46: #233E32;
+    --color-cenizo-56: #4a4a4a;
+    --color-cenizo-66: #999999;
+    --color-oscuro-1: #2d1b66;
 
     --poppins: 'Poppins', sans-serif;
 }
@@ -17,7 +37,7 @@
 
 body {
     font-family: var(--poppins);
-    background: var(--color-primario);
+    background: linear-gradient(#c3daf2 0%, #f9ffff 33.33%, #f9ffff 66.67%, #c3daf2 100%);
 }
 
 .container {

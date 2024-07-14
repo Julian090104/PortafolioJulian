@@ -3,7 +3,6 @@
     align-items: flex-end;
     padding-top: 8rem;
     padding-bottom: 60px;
-    background-color: var(--background-blanco);
     justify-content: center;
 }
 
@@ -22,7 +21,7 @@
     font-weight: 700;
     line-height: 1.1;
     padding-bottom: 20px;
-    background-image: linear-gradient(to left, #3dd782 40%, #0099ff);
+    background: linear-gradient(to left, #62E02D 0%, #2de0dd 33.33%, #1bc6ec 50%, #2480ff 100%);
     background-size: 100%;
 
     -webkit-background-clip: text;
@@ -32,7 +31,7 @@
 }
 
 .hero__description {
-    color: var(--color-cenizo56);
+    color: var(--color-cenizo-56);
     font-size: 1.25rem;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -43,13 +42,17 @@
     gap: 2rem;
 }
 
+.hero__social :hover {
+    transform: scale(1.20);
+}
+
 .hero__link {
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    color: var(--color-cenizo46);
+    color: var(--color-cenizo-46);
 }
 
 .hero__link i {
@@ -58,12 +61,12 @@
 }
 
 .hero__link.hero__link--cv {
-    background: var(--color-azul-claro);
+    background: var(--color-verde);
     transition: all .3s ease-in-out;
 }
 
 .hero__link.hero__link--cv:hover {
-    background: var(--color-verde);
+    background: var(--color-azul-medio);
 }
 
 .hero__link.hero__link--linkedin,
@@ -75,12 +78,6 @@
 .hero__link.hero__link--linkedin:hover,
 .hero__link.hero__link--github:hover {
     background: var(--color-verde);
-}
-
-.wave {
-    position: relative;
-    width: 100%;
-    background-color: var(--background-blanco);
 }
 
 @media screen and (max-width: 1025px) {
@@ -106,10 +103,6 @@
 
     .hero__title {
         font-size: 2.6rem;
-    }
-
-    .hero__sub {
-        font-size: 1.5rem;
     }
 
     .hero__social {
